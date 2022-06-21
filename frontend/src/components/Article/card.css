@@ -1,0 +1,22 @@
+.fun{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+     
+.xd:link {
+        text-decoration: none;
+        color: aquamarine;
+      }
+      
+.xd:visited {
+        text-decoration: none;
+        color: aquamarine;
+      }
+      
+.xd:hover {
+        text-decoration: underline;
+      }
+      
+.xd:active {
+        text-decoration: underline;
+      }

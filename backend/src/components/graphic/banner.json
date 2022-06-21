@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_graphic_banners",
+  "info": {
+    "displayName": "Banner",
+    "icon": "photo-video",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "photo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "videos"
+      ]
+    },
+    "info": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string",
+      "regex": "^[(http(s)?):\\/\\/(www\\.)?a-zA-Z0-9@:%._\\+~#=]{2,256}\\.[a-z]{2,6}\\b([-a-zA-Z0-9@:%_\\+.~#?&//=]*)$"
+    }
+  }
+}

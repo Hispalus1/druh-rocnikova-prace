@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_url_wikipedias",
+  "info": {
+    "displayName": "wikipedia",
+    "icon": "globe",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Wikipedia": {
+      "type": "string",
+      "unique": false,
+      "regex": "^https:\\/\\/(cs|en)\\.wikipedia\\.org\\/wiki\\/.*$"
+    }
+  }
+}

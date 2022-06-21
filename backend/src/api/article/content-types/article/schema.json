@@ -1,0 +1,63 @@
+{
+  "kind": "collectionType",
+  "collectionName": "articles",
+  "info": {
+    "singularName": "article",
+    "pluralName": "articles",
+    "displayName": "Article",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "minLength": 5,
+      "maxLength": 200
+    },
+    "content": {
+      "type": "richtext",
+      "required": true
+    },
+    "releasedAt": {
+      "type": "date"
+    },
+    "likes": {
+      "type": "integer",
+      "default": 0
+    },
+    "dislikes": {
+      "type": "integer",
+      "default": 0
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::category.category",
+      "mappedBy": "articles"
+    },
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "articles"
+    },
+    "people": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::person.person",
+      "mappedBy": "articles"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "kind": "singleType",
+  "collectionName": "homepages",
+  "info": {
+    "singularName": "homepage",
+    "pluralName": "homepages",
+    "displayName": "Homepage",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "carousel": {
+      "type": "component",
+      "repeatable": false,
+      "component": "graphic.carousel"
+    },
+    "about": {
+      "type": "richtext"
+    }
+  }
+}

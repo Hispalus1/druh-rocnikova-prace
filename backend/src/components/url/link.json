@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_url_links",
+  "info": {
+    "displayName": "Link",
+    "icon": "paperclip",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "url": {
+      "type": "string",
+      "regex": "^[(http(s)?):\\/\\/(www\\.)?a-zA-Z0-9@:%._\\+~#=]{2,256}\\.[a-z]{2,6}\\b([-a-zA-Z0-9@:%_\\+.~#?&//=]*)$"
+    },
+    "title": {
+      "type": "string"
+    }
+  }
+}

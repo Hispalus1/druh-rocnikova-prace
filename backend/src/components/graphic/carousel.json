@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_graphic_carousels",
+  "info": {
+    "displayName": "Carousel",
+    "icon": "images",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "banner": {
+      "type": "component",
+      "repeatable": true,
+      "component": "graphic.banner"
+    }
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "kind": "collectionType",
+  "collectionName": "people",
+  "info": {
+    "singularName": "person",
+    "pluralName": "people",
+    "displayName": "Person",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "minLength": 3
+    },
+    "birth": {
+      "type": "date"
+    },
+    "death": {
+      "type": "date"
+    },
+    "sex": {
+      "type": "enumeration",
+      "enum": [
+        "muž",
+        "žena",
+        "jiné"
+      ]
+    },
+    "bio": {
+      "type": "richtext"
+    },
+    "photo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "wiki_links": {
+      "type": "component",
+      "repeatable": true,
+      "component": "url.wikipedia"
+    },
+    "articles": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::article.article",
+      "inversedBy": "people"
+    },
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "people"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "kind": "singleType",
+  "collectionName": "headers",
+  "info": {
+    "singularName": "header",
+    "pluralName": "headers",
+    "displayName": "Header"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "motto": {
+      "type": "string"
+    },
+    "logo": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
